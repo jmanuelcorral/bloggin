@@ -37,3 +37,5 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 gem 'rspec'
+gem 'twitter-bootstrap-rails'
+gem 'bootstrap-wysihtml5-rails'
