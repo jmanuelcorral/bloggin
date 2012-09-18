@@ -11,19 +11,23 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field span6"
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </div>
-  <div class="field">
+  <div class="field span6">
     <%= f.label :short_description %><br />
     <%= f.text_field :short_description %>
   </div>
-  <div class="field">
+  <div class="field span6">
     <%= f.label :large_description %><br />
     <%= f.text_area :large_description %>
   </div>
-  <div class="actions">
+  <div class="actions span6">
     <%= f.submit %>
   </div>
 <% end %>
+6 <script type="text/javascript">
+ 27     $('#post_large_description').wysihtml5();
+ 28 </script>
+
