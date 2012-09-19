@@ -11,23 +11,21 @@
     </div>
   <% end %>
 
-  <div class="field span6"
+  <div class="field span12"
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </div>
-  <div class="field span6">
+  <div class="field span12">
     <%= f.label :short_description %><br />
     <%= f.text_field :short_description %>
   </div>
-  <div class="field span6">
+  <div class="field span12">
     <%= f.label :large_description %><br />
-    <%= f.text_area :large_description %>
+    <%= f.text_area :large_description, :class => 'span8' %>
   </div>
-  <div class="actions span6">
-    <%= f.submit %>
+  <div class="actions span12">
+    <%= f.submit :class => 'btn btn-primary' %>
   </div>
 <% end %>
-6 <script type="text/javascript">
- 27     $('#post_large_description').wysihtml5();
- 28 </script>
+
 

@@ -13,6 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require wysihtml5
-//= require bootstrap-wysihtml5
+//= require bootstrap-wysihtml5-all
 //= require_tree .
+    $(document).ready(function(){$('#post_large_description').wysihtml5()});
