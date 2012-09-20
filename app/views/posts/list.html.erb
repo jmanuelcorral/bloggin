@@ -1,0 +1,27 @@
+<h1>Listing posts</h1>
+
+<table class='table table-bordered table-stripped'>
+  <tr>
+    <th>Title</th>
+    <th>Short description</th>
+    <th>Large description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.title %></td>
+    <td><%= post.short_description %></td>
+    <td><%= post.large_description %></td>
+    <td><%= link_to 'Show', post, :class => 'btn btn-success' %></td>
+    <td><%= link_to 'Edit', edit_post_path(post), :class => 'btn btn-primary' %></td>
+    <td><%= link_to 'Destroy', post, :class => 'btn btn-danger',method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Post', new_post_path, :class => 'btn btn-primary' %>
